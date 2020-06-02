@@ -1,1 +1,1 @@
-# dirty zim notes that i made when i preparing for oscp 
+# dirty zim notes that i made when i am preparing for oscp 
