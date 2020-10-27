@@ -1,0 +1,30 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-10-27T09:20:15+05:45
+
+====== air ======
+Created Tuesday 27 October 2020
+
+====== life saver ======
+**service NetworkManager restart**
+
+
+====== iwconfig ======
+**iwconfig**
+
+
+====== airmon-ng ======
+* **sudo airmon-ng start wlan0mon**
+* **sudo airmon-ng stop wlan0mon**
+* **airmon-ng check kill**
+
+
+====== aireplay-ng ======
+* **aireplay-ng --test wlan0mon    ( packet injection test )**
+* **aireplay-ng --deauth 10 -a 84:79:73:EA:A9:70 wlan0mon  (  send deauth  packets )**
+
+
+====== airodump-ng ======
+* **airodump-ng wlan0mon**
+* **airodump-ng --bssid 84:79:73:EA:A9:70 -c 6 -w file_name wlan0mon**
+

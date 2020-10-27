@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-17T05:25:51-04:00
+
+====== Dig ======
+Created Sunday 17 May 2020
+
+domain informtion Groper
+
+dig @IP {link} -t {type}
+ex..dig @10.10.132.1 bookface.com -t TXT

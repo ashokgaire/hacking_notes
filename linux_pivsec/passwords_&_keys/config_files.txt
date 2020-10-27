@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-19T07:16:31-04:00
+
+====== config files ======
+Created Tuesday 19 May 2020
+
+Config files often contain passwords in plaintext or other reversible formats.
+
+List the contents of the user's home directory:
+
+ls /home/user
+
+Note the presence of a myvpn.ovpn config file. View the contents of the file:
+
+cat /home/user/myvpn.ovpn

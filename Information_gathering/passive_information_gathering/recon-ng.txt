@@ -1,0 +1,38 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-21T06:02:36-04:00
+
+====== recon-ng ======
+Created Thursday 21 May 2020
+
+**recong-ng**
+
+**marketplace search github**
+
+D = Has dependencies. See info for details.
+K = Requires keys. See info for details.
+
+**marketplace info recon/domains-hosts/google_site_web**
+
+**marketplace install recon/domains-hosts/google_site_web**
+
+**modules load recon/domains-hosts/google_site_web**
+
+**options set SOURCE megacorpone.com**
+
+**run**
+
+**back**
+
+**show**
+
+**show hosts**
+
+
+**marketplace info recon/hosts-hosts/resolve**
+
+**marketplace install recon/hosts-hosts/resolve**
+
+**modules load recon/hosts-hosts/resolve**
+
+**run**

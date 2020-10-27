@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-12T07:48:01-04:00
+
+====== httpprove ======
+Created Tuesday 12 May 2020
+
+github for installation
+
+
+check if  subdomain  we collect responds or not
+
+go tool
+
+
+cat  {subdomainlists.txt}  | httprobe 
+
+cat  {subdomainlists.txt}  | httprobe  -s -p  :https:443 

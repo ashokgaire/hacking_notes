@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-21T13:46:28-04:00
+
+====== cross compliner ======
+Created Thursday 21 May 2020
+
+**sudo apt install mingw-w64**
+
+
+**i686-w64-mingw32-gcc 42341.c -o syncbreeze_exploit.exe**
+
+**i686-w64-mingw32-gcc 42341.c -o syncbreeze_exploit.exe -lws2_32**

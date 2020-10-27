@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-21T07:28:44-04:00
+
+====== netbios ======
+Created Thursday 21 May 2020
+
+**nmap -v -p 139,445 -oG smb.txt 10.11.1.1-254**
+
+or 
+**sudo nbtscan -r 10.11.1.0/24**
+
+====== Nmap SMB NSE Scripts ======
+
+**ls -1 /usr/share/nmap/scripts/smb***
+
+**nmap -v -p 139, 445 --script=smb-os-discovery 10.11.1.227**
+
+**nmap -v -p 139,445 --script=smb-vuln-ms08-067 --script-args=unsafe=1 10.1**
+**1.1.5**
+
+//Please Note: If we set the script parameter unsafe=1 , the scripts that will run are//
+//almost (or totally) guaranteed to crash a vulnerable system. Needless to say,//
+//exercise extreme caution when enabling this argument, especially when//
+//scanning production systems.//

@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-07-15T00:03:11-04:00
+
+====== reverse engineering ======
+Created Wednesday 15 July 2020
+
+====== dump asm ======
+**objdump -d -M intel package_name > output.asm**
+
+====== importants stuff ======
+
+* RET => return address
+
+**word    => 4 byte or 32bits  ex.. char buffer[5] gonna take 8 byte space**

@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-09T09:36:16-04:00
+
+====== chackmapexec ======
+Created Saturday 09 May 2020
+
+apt install crackmapexec
+
+
+crackmapexec {CIDR} -u {username}  -d{domainname} -p{password}

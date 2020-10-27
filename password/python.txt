@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-16T15:55:48-04:00
+
+====== python ======
+Created Saturday 16 May 2020
+
+binascii
+--import binascii
+binascii.unhexlify("hash")
+
+base64
+
+import base64
+
+base64.b64decode("hash")
+
+can also
+base64.b64decode(binascii.unhexlify("hash"))

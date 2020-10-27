@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-20T06:51:18-04:00
+
+====== dns spoof ======
+Created Wednesday 20 May 2020
+
+**help dns.spoof**
+
+**set dns.spoof.address {any ip  to loads the target}**
+**set dns.spoof.all true**
+**set dns.domains {target} ex  facebook.com, *.facebook.com**
+
+**dns.spoof on**

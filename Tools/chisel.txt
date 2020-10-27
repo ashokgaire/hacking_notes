@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-10-05T16:09:13+05:45
+
+====== chisel ======
+Created Monday 05 October 2020
+
+chisel server -p 10000 --reverse

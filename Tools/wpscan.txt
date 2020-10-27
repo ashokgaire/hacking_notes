@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-17T11:17:34-04:00
+
+====== wpscan ======
+Created Sunday 17 May 2020
+
+wordpress scan
+
+
+**wpscan --url {url }**
+
+**wpscan --url http://$IP --enumerate vp,vt,u**
+
+password burte force
+
+wpscan -u 192.168.1.100 --username elliot --passwords /root/fsocity-u.txt

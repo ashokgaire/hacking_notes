@@ -1,0 +1,89 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-07-15T00:03:26-04:00
+
+====== gdb ======
+Created Wednesday 15 July 2020
+
+* **run**
+* **c**   [continue run from the current location]
+* **break *0x400500**
+* **x/8i $rip             [shows 8 instruction begning from RIP register**
+* **x/8wx   or bx/hx/wx/gx $rsp**   
+* **info break**
+* **delete 1      [ delets breakpoint ]**
+* **print/x $rip   show the rip/current_location value**
+* **nexti   or ni one step forward**
+* **stepi   [step in (useful for functions) ]**
+
+====== jump ======
+j *address
+
+====== xinfo ======
+xinfo system
+
+====== find ======
+**search-pattern  "/bin/bash" binary**
+
+**find 0x8048000(start ddress), 0x8049000(end ddress), "/bin/sh"(search strinig)**
+**info proc mapping to see starting and end address**
+**info address __bss_start**
+
+====== set ======
+set $rdi = 0x0
+
+**set *(unsigned char*)0x400512 = 0x90  [ set noop in address 0x400512 ]**
+
+====== check register value ======
+p $rdi
+x/g address
+x/s address
+info register
+info frame
+
+====== create pattern ======
+
+**pattern create 100 u_pattern.txt**
+
+====== others ======
+
+**'gdb part commands'**
+
+**gdb -q note_server (open gef)**
+**r                   (run)**
+**checksec            (check canary)**
+
+**disas                (dissassemble  disas main for main )**
+
+**break fork            (break on fork )**
+**set follow-fork-mode child **
+
+**n 50   (next 50 times)**
+
+**info inferior   ( info about inferiors)**
+
+**ps -ef | grep note_server**
+
+**attach 86843   (attach to process id 86843)**
+
+**break read         (break on read)**
+ **b *main+30**
+**clear breakpoints             (clear all breakpoints)**
+
+**VMMAP **
+**'''**
+**pick first address and substract it from rib (rib-first ex.0x0000555555554000)**
+
+**process-status     ( to check fd here)**
+
+**x/x address **
+
+**x/s address**
+
+
+
+
+
+
+
+

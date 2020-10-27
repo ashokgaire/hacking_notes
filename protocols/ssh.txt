@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-08T05:17:25-04:00
+
+====== ssh ======
+Created Friday 08 May 2020
+
+secure shell  (22 for TCP port) 
+
+ssh {target}
+target   loginusername@$IP
+ssh {target} -oKexAlgorithm=+{name}  -c {unknown}
+
+ssh -i {identy_filename}  username@$IP
+
+remember  wgelctf in tryhackme you get RSA key and store to identy-filename 

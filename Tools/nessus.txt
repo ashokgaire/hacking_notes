@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-16T12:55:28-04:00
+
+====== nessus ======
+Created Saturday 16 May 2020
+
+**/etc/init.d/nessusd start**
+**#https://kali:8834/**

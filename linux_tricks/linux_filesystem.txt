@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-19T11:02:15-04:00
+
+====== linux filesystem ======
+Created Tuesday 19 May 2020
+
+* /bin - basic programs (ls, cd, cat, etc.)
+* /sbin - system programs (fdisk, mkfs, sysctl, etc)
+* /etc - configuration files
+* /tmp - temporary files (typically deleted on boot)
+* /usr/bin - applications (apt, ncat, nmap, etc.)
+* /usr/share - application support and data files

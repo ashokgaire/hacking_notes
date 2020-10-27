@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-07-08T01:31:03-04:00
+
+====== ping ======
+Created Wednesday 08 July 2020
+
+ping -c 10 ip
+
+**listen**
+
+**sudo tcpdump -i tun0 icmp -v**

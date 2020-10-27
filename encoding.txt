@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-07-14T05:07:34-04:00
+
+====== encoding ======
+Created Tuesday 14 July 2020
+
+
+**#** Separate anchors **%23**
+**?** Separate query string **%3F**
+**&** Separate query elements **%24**
+**%** Indicates an encoded character **%25**
+**/** Separate domain and directories **%2F**
+**+** Indicates a space **%2B**
+Not recommended **%20 or +**
+=       %3D

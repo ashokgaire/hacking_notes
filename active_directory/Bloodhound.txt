@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-09T09:15:00-04:00
+
+====== Bloodhound ======
+Created Saturday 09 May 2020
+
+download  activedirectorry data
+
+apt  install bloodhound
+
+neo4j   console
+
+bloodhound
+
+invoke-bloodhound(check github )

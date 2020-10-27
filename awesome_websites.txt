@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-08T08:35:45-04:00
+
+====== awesome websites ======
+Created Friday 08 May 2020
+
+* https://www.hackthebox.eu/
+* https://tryhackme.com/

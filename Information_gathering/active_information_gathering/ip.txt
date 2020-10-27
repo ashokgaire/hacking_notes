@@ -1,0 +1,34 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-21T06:35:17-04:00
+
+====== ip ======
+Created Thursday 21 May 2020
+
+to find ip 
+
+**host {sitename}**
+
+**host -t {dns_type} {stitename}**
+
+**-t takes ns,a,mx,ptr,cname,txt**
+
+
+also serach like this to find more
+
+**host idontexist.megacorpone.com**
+Host idontexist.megacorpone.com not found: 3(NXDOMAIN)
+
+
+advance way
+
+**cat list.txt**
+www
+ftp
+mail
+owa
+proxy
+router
+
+
+**for ip in $(cat list.txt); do host $ip.megacorpone.com; done**

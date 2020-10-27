@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-08-08T10:22:35+05:45
+
+====== pwngdb ======
+Created शनिवार 08 अगस्त 2020
+
+====== show less ======
+**set context-sections {name}   ex name=code**
+
+====== inspect heap memory ======
+
+**vis_heap_chunks or vis**
+
+====== print variable ======
+**print/p variable_name**
+
+
+====== fastbins ======
+**fastbins**
+
+====== find fake chunks ======
+**find_fake_chunks @__malloc_hook**
+																**fastbins**

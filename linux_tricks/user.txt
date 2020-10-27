@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-21T07:36:49-04:00
+
+====== user ======
+Created Thursday 21 May 2020
+
+
+change user uid from 1001 to 1014
+**sudo sed -i -e 's/1001/1014/g' /etc/passwd**

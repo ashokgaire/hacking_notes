@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-21T07:10:28-04:00
+
+====== netcat ======
+Created Thursday 21 May 2020
+
+====== tcp scanning ======
+**nc -nvv -w  1 -z {ip} 3388-3390**
+
+====== udp scanning ======
+
+**nc -nvv -u -z -w  1 -z {ip} 3388-3390**

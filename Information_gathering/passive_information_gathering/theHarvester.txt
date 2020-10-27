@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-13T06:35:37-04:00
+
+====== theHarvester ======
+Created Wednesday 13 May 2020
+
+**usgae theHarvester -d {xyz.com} -l {limit ex.500} -b {searchenine ex..google,baidu...}**
+
+-d to specify the target domain and -b to set the data
+source to search

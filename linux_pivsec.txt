@@ -1,0 +1,34 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-19T01:42:22-04:00
+
+====== linux pivsec ======
+Created Tuesday 19 May 2020
+
+linux privilege escalation method
+
+link:https://github.com/sagishahar/lpeworkshop
+
+* id   (this show the id of current user uid,guid,groups..........)
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.vim
+   ---sudo vim
+	  --!sh
+	  --enter
+
+2.nmap 
+	--sudo nmap  --interactive
+	--!sh enter 
+      

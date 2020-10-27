@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-17T14:37:19-04:00
+
+====== qark ======
+Created Sunday 17 May 2020
+
+qark --pathtoapk <path to apk> --install 1 --exploit 0 --reportdir <report location>

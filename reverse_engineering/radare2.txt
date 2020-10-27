@@ -1,0 +1,75 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-07-15T08:23:41-04:00
+
+====== radare2 ======
+Created Wednesday 15 July 2020
+
+====== open ======
+**r2  -A filename**
+**-w opens file in write mode**
+**-d enable debugger**
+**- opens console without file**
+
+====== list/display ======
+**pdf@main**
+**afl**
+
+====== visual mode ======
+**oo+**
+**V**
+**press p to change how it looks**
+**C to edit mode on line **
+**i to insert hex {9090 to insert noop}**
+
+**q to exit**
+
+**: to run normal radar command inside visual mode**
+**; add a comment**
+
+====== write mode ======
+**w write a string to the current memory**
+**wc lists all the write chanegs**
+**wa modifies an instruction at the current memory addresss**
+wao nop  {write assembly inside current Opcode}
+
+
+====== information ======
+**ia  all info about the file**
+**izz every strings in the binary**
+**im address of main funxtion**
+**j .. add it in every command to get json output**
+**ie entrypoit of file**
+
+
+
+====== navigation through memeory ======
+**s  get current memory address your located **
+**s +5 mves 5 bytes fordward**
+**s - 12 moves 12 bytes backward**
+**s - undo previous seek**
+**s main move to main memory address**
+**sr rax go to the address of rax register**
+
+
+====== printing ======
+**px hex output of where are you currently in memory**
+**pd  disassembly of '" " " '          ""                                ""**
+**pd @ main disassembly the main function**
+
+
+====== debugging ======
+**db set a breakpoint**
+**dr print values of all the register**
+**dc runs the program**
+**ds 2 go forth 2 lines in the binary**
+
+
+
+
+
+
+
+
+
+

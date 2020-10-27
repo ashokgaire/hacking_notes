@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-22T11:28:24-04:00
+
+====== psexec ======
+Created Friday 22 May 2020
+
+**psexec.py admin:'pass'@ip**
+
+**smbexec.py admin:'pass'@ip**
+
+**wmiexec.py admin:'pass'@ip**

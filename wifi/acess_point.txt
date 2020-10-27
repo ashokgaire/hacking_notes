@@ -1,0 +1,46 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-10-27T09:19:47+05:45
+
+====== acess point ======
+Created Tuesday 27 October 2020
+
+cretate your own access point page
+
+
+====== install hostap ======
+**sudo apt install dnsmasq hostapd**
+
+
+* **airmon-ng check kill**
+
+====== **dnsmasq.conf** ======
+
+
+**#SET the wireless interface**
+**interface=wlan0**
+
+**#SET the ip range for client**
+**dhcp-range=192.168.1.2,192.168.1.250,12h**
+
+**#SET the gateway ip**
+**dhcp-option=3,192.168.1.1**
+
+**#SET the dns server address**
+**dhcp-option=6,192.168.1.1**
+
+
+====== **hostap.conf ** ======
+
+**#SET the wireless interface**
+**interface=wlan0**
+
+
+**#SET the wireless interface**
+**ssid=Test-Wifi**
+
+**#Set channel**
+**channel=1**
+
+**#Set driver**
+**driver=nl80211**

@@ -1,0 +1,142 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-19T11:05:15-04:00
+
+====== linux basic commands ======
+Created Tuesday 19 May 2020
+
+man  {name}
+ex.. man ls
+
+man -k ls  (narrow down result)
+
+man -k '^ls$'
+
+here ls is key ,,
+
+
+====== apropos {key} ======
+we can search the list of man page descriptions for a possible match
+based on a keyword.
+
+====== mkdir ======
+
+**mkdir -p test/{recon,exploit,report} {create multiple direcories}**
+
+
+====== find ======
+With find , we can search by file age, size, owner, file type, timestamp, permissions,
+and more.
+**find / -name {sbd*}** 
+
+====== systemctl ======
+
+--**start /--stop  / restart**
+---**enable** to auto start at boot
+ex...**sudo systemctl start ssh**
+
+---**systemctl list-unit-files**
+
+
+====== ss ======
+check for opens port
+---sudo ss -antlp | grep  ssh
+
+====== apt remove ======
+
+sudo apt remove --purge {package_name}
+
+====== bash ======
+ --**shell**
+  --**history**
+  __**!{history number}** to reuse in bash shell
+  **— !!**          repeats the last bash command
+   --- **[ CTRL-R]** enables reverse search
+
+====== redirection ======
+
+* **>**  redirectiong to a file
+* **<** redirecting from a file
+
+====== 1. std ======
+* stdin 0
+* stdout 1
+* stderr 2
+
+====== 2.redirecting error ======
+   **ls ./test 2>eror.txt**
+
+
+====== piping ( | ) ======
+
+to redirect the output
+from one command into the input of another
+
+**cat error.txt | wc -m**
+
+====== grep ======
+**ls -la /usr/bin | grep zip**
+-r for recursive searching and -i to ignore text case.
+
+====== sed ======
+**echo "I need to try hard" | sed 's/hard/harder/'**
+I need to try harder
+
+====== head ======
+**head access.log**
+display 10 lines
+
+====== wc ======
+**wc asscess.log**
+display number of lines in file
+
+====== comm / diff / vimdiff (file comparing) ======
+**comm a.txt b.txt**
+**diff-u a.txt b.txt**
+
+====== backgound / foreground  /jobs ======
+
+  **bg/fg/jobs**
+  ctrl + z to background a process
+--fg  %number to foreground task
+
+====== process and kill ======
+
+**ps -ef**
+//• e : select all processes//
+//• f : display full format listing (UID, PID, PPID, etc.)//
+* -C (select by command
+name)
+-C (select by command
+name)
+**ps -fc leafpad**
+kill (ps number)
+
+
+====== alias ======
+**kali@kali:~$ alias lsa='ls -la'**
+**kali@kali:~$ lsa**
+
+**--unalias lsa**
+
+====== grep ======
+**grep "href=" index.html   **
+
+returns all href from index.html
+
+**grep "href=" index.html | grep "\.megacorpone" | grep -v "www\.megacorpon**
+**e\.com" | head**
+
+**grep "href=" index.html | grep "\.megacorpone" | grep -v "www\.megacorpon**
+**e\.com" | awk -F "http://" '{print $2}'**
+
+--**{print $2} returns second line**
+
+**grep -o '[^/]*\.megacorpone\.com' index.html | sort -u > list.txt**
+**kali@kali:~$ cat list.txt**
+admin.megacorpone.com
+beta.megacorpone.com
+intranet.megacorpone.com
+
+
+   

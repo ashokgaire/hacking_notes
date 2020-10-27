@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-08T12:13:53-04:00
+
+====== java deserilization ======
+Created Friday 08 May 2020
+
+visit  ysoserious github

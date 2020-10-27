@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-08-23T13:24:13+05:45
+
+====== printers ======
+Created रविवार 23 अगस्त 2020
+
+**https://github.com/RUB-NDS/PRET.git**
+
+====== refrence ======
+laser hackthebox
+
+**example: python pret.py 10.10.10.201 pjl**

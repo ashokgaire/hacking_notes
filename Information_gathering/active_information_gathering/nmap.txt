@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-08T03:28:41-04:00
+
+====== nmap ======
+Created Friday 08 May 2020
+
+
+**nmap -sC -sV -p- $IP**
+**nmap  -T4  -p-  -A  {target}**
+**nmap -T4 -p  {port1,port2....}  {otheroptions} {target}**
+
+paranoid (0), sneaky (1), polite (2), normal (3), aggressive (4), and insane (5).
+
+
+-O os fingerprinting
+--top-ports=20
+--script=smb-os-discovery   **(/usr/share/nmap/scripts)**
+--script=dns-zone-transfer
+**nmap --script-help dns-zone-transfer**
+
+-oG <file>: Output scan in normal, XML, s|<rIpt kIddi3,
+	 and Grepable format,
+-oA <basename> (output to all formats)  basename.xml

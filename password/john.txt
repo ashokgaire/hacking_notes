@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-16T05:08:38-04:00
+
+====== john ======
+Created Saturday 16 May 2020
+
+zip2john {zipfilename} > hashes.txt
+john hashes.txt --wordlist={}
+
+
+john hascat.txt --wordlist=/usr/share/wordlists/rockyou.txt --format=RAW-MD5

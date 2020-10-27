@@ -1,0 +1,36 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-21T07:32:02-04:00
+
+====== NFS Enumeration ======
+Created Thursday 21 May 2020
+
+Network File System (NFS)
+
+
+**nmap -v -p 111 10.11.1.1-254**
+
+We can use NSE scripts like rpcinfo to find services that may have registered with rpcbind:
+**nmap -sV -p 111 --script=rpcinfo 10.11.1.1-254**
+
+
+
+**nmap -p 111 --script nfs* 10.11.1.72**
+...
+Nmap scan report for 10.11.1.72
+PORT
+STATE SERVICE
+111/tcp open rpcbind
+| nfs-showmount:
+|_ /home 10.11.0.0/255.255.0.0
+
+
+
+In this case, the entire /home directory is being shared and we can access it by mounting it on our
+Kali virtual machine. We will use mount to do this, along with -o nolock to disable file locking,
+which is often needed for older NFS servers:
+**kali@kali:~$ mkdir home**
+**kali@kali:~$ sudo mount -o nolock 10.11.1.72:/home ~/home/**
+**kali@kali:~$ cd home/ && ls**
+jenny joe45 john marcus ryuu
+

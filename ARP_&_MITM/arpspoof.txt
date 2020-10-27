@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-20T05:06:10-04:00
+
+====== arpspoof ======
+Created Wednesday 20 May 2020
+
+**Usage: arpspoof [-i interface] [-c own|host|both] [-t target] [-r] host**
+
+
+ex..**arpspoof -i wlan0 -t {target ip} {gateway}**
+----**arpspoof -i wlan0 -t  {gateway} {target ip}**
+
+====== enable port forwarding in linux(like router) ======
+
+**echo 1 > /proc/sys/net/ipv4/ip_fordward**

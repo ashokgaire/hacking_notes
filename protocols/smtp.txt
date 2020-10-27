@@ -1,0 +1,34 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-21T07:38:50-04:00
+
+====== smtp ======
+Created Thursday 21 May 2020
+
+simple mail transfer protocol port 25
+
+**nc -nv {ip} 25**
+
+**user boris**
+**pass InvincibleHack3r**
+**list**
+**retr 1/2/3/...  (to retrive message)**
+
+
+	 **HELO/EHLO**
+**    MAIL FROM**
+**    RCPT TO**
+**    DATA**
+**    NOOP**
+**    HELP**
+**    VRFY and EXPN**
+**    RSET**
+**    QUIT **
+
+**Extended SMTP commands that some SMTP servers may support**
+
+**    STARTTLS**
+**    AUTH**
+**    ATRN**
+**    BDAT**
+**    ETRN** 

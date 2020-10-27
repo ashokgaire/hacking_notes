@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-20T04:54:39-04:00
+
+====== arp ======
+Created Wednesday 20 May 2020
+
+**Addess resolution protocol**
+	   simple protocol used to map ip address of a machine to its mac address

@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-21T06:45:17-04:00
+
+====== reverse lookup brute force ======
+Created Thursday 21 May 2020
+
+**for ip in $(seq 50 100); do host 38.100.193.$ip; done | grep -v "not fou**
+**nd"**
+69.193.100.38.in-addr.arpa domain name pointer beta.megacorpone.com.
+70.193.100.38.in-addr.arpa domain name pointer ns1.megacorpone.com.
+72.193.100.38.in-addr.arpa domain name pointer admin.megacorpone.com.
+73.193.100.38.in-addr.arpa domain name pointer mail2.megacorpone.com.
+76.193.100.38.in-addr.arpa domain name pointer www.megacorpone.com.
+77.193.100.38.in-addr.arpa domain name pointer vpn.megacorpone.com.

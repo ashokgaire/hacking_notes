@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-13T06:38:18-04:00
+
+====== shodan ======
+Created Wednesday 13 May 2020
+
+**shodan.io**
+**hostname:megacorpone.com**  (filter serach)

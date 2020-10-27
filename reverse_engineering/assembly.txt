@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-07-15T04:06:41-04:00
+
+====== assembly ======
+Created Wednesday 15 July 2020
+
+
+
+====== mov/add/and/or ======
+mov eax ,0xA ; set EAX to 0xA (1010 in binary)
+
+====== jump ======
+**je:jump if condition meet**
+   **jne/jnz : jump if condition not meet**
+
+====== shr ======
+**shr eax, 2     ;shift 2 bits to the right in eax**
+
+====== shl ======
+**shl eax, 2    ; shifts 2 bits left in EAX, now equal to 0x28 (101000 in binary)**
+
+====== lea	(load effective address) ======
+
+**Opcode 	Mnemonic 	Description**
+**8D /r 	LEA r16,m 	Store effective address for m in register r16.**
+**8D /r 	LEA r32,m 	Store effective address for m in register r32.**
+

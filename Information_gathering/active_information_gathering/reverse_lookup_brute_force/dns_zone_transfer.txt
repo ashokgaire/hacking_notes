@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-21T07:03:06-04:00
+
+====== dns zone transfer ======
+Created Thursday 21 May 2020
+
+**host -l <domain name> <dns server address>**
+
+**host -l megacorpone.com ns1.megacorpone.com**
+
+-l (list zone)

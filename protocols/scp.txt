@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-14T12:59:23-04:00
+
+====== scp ======
+Created Thursday 14 May 2020
+
+**scp -i {identity_file}  /opt/linpeas.sh  username@$IP:/dev/shm**
+
+
+
+
+**scp user@IP:/home/user/xyz.file   .**
+
+
+  to download it on user current directory
+
+
+**scp /home/oxy/practice/exploits/linpeas.sh jan@$IP:/dev/shm**
+
+to upload on /dev/shm

@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-09T09:05:18-04:00
+
+====== powerview ======
+Created Saturday 09 May 2020
+
+visit github for installation
+its  windows os..
+
+powershell -ep  bypass
+
+.  .\powerView.ps1
+--Get-NetDomain
+--Get-NetDomainController
+--Get-DomainPolicy
+--(Get-DomainPolicy)."system access"
+--Get-NetUser
+--Get-NetUser | select    smaccountname

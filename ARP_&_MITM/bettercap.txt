@@ -1,0 +1,56 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-20T05:34:25-04:00
+
+====== bettercap ======
+Created Wednesday 20 May 2020
+
+**bettercap -iface waln0**
+
+**bettercap -iface waln0 -caplet xyz.cap  (xyz stores custom command that bettercap uses)**
+	---help
+	 help MODULE : List available commands or show module specific help if no module name is provided.
+				active : Show information about active modules.
+				  quit : Close the session and exit.
+		 sleep SECONDS : Sleep for the given amount of seconds.
+			  get NAME : Get the value of variable NAME, use * alone for all, or NAME* as a wildcard.
+		set NAME VALUE : Set the VALUE of variable NAME.
+  read VARIABLE PROMPT : Show a PROMPT to ask the user for input that will be saved inside VARIABLE.
+				 clear : Clear the screen.
+		include CAPLET : Load and run this caplet in the current session.
+			 ! COMMAND : Execute a shell command and print its output.
+		alias MAC NAME : Assign an alias to a given endpoint given its MAC address.
+
+Modules
+
+	  any.proxy > not running
+	   api.rest > not running
+	  arp.spoof > not running
+	  ble.recon > not running
+		caplets > not running
+	dhcp6.spoof > not running
+	  dns.spoof > not running
+  events.stream > running
+			gps > not running
+			hid > not running
+	 http.proxy > not running
+	http.server > not running
+	https.proxy > not running
+   https.server > not running
+	mac.changer > not running
+	mdns.server > not running
+   mysql.server > not running
+	  net.probe > not running
+	  net.recon > not running
+	  net.sniff > not running
+   packet.proxy > not running
+	   syn.scan > not running
+	  tcp.proxy > not running
+		 ticker > not running
+			 ui > not running
+		 update > not running
+		   wifi > not running
+			wol > not running
+
+192.168.1.0/24 > 192.168.1.106  »  
+                                     

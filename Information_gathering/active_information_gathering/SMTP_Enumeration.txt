@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-21T07:38:32-04:00
+
+====== SMTP Enumeration ======
+Created Thursday 21 May 2020
+
+We can also gather information about a host or network from vulnerable mail servers. The Simple
+Mail Transport Protocol (SMTP) supports several interesting commands, such as **VRFY **and
+EXPN. A **VRFY** request asks the server to verify an email address, while EXPN asks the server for
+the membership of a mailing list. These can often be abused to verify existing users on a mail
+server, which is useful information during a penetration test. Consider this example:
+**kali@kali:~$ nc -nv 10.11.1.217 25**
+(UNKNOWN) [10.11.1.217] 25 (smtp) open
+220 hotline.localdomain ESMTP Postfix
+VRFY root

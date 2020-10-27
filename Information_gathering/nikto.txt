@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-08T04:52:12-04:00
+
+====== nikto ======
+Created Friday 08 May 2020
+
+nikto -h https://127.0.0.1
+
+
+nikto -useproxy http://192.168.x.x:8080 -h 192.168.x.x
+
+
+
+nikto -Tuning x4 -host 192.168.29.55 -port 80 -Format htm -o 192.168.29.55-nikto.html   <----skipping injection scan, tuned out scan

@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-19T05:17:59-04:00
+
+====== passwd ======
+Created Tuesday 19 May 2020
+
+this stores the use information
+
+[[/etc/passwd]]
+
+to generate newpassword hash 
+
+openssl passwd newpasswordhere
+
+
+paste the generated hash     : x:   (replace the x)
+
+you can also copy paste the root to new line and make newroot
+

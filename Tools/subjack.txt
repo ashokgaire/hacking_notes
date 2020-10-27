@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-12T07:56:49-04:00
+
+====== subjack ======
+Created Tuesday 12 May 2020
+
+takeover the unused subdomain (pending.....)

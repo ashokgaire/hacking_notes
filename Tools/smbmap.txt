@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-17T08:10:06-04:00
+
+====== smbmap ======
+Created Sunday 17 May 2020
+
+samba
+
+smbmap -H 10.10.10.10 -u "admin" -p "password" -C "ipconfig"
+
+
+
+options
+-U  username
+-P password
+-x runs commands on host server
+-d domain
+--download
+--uplaod 

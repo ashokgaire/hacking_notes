@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-17T14:38:05-04:00
+
+====== apktool ======
+Created Sunday 17 May 2020
+
+In order to reverse an APK, do the following
+
+java -jar apktool_2.1.1.jar d <apkname.apk>
+
+Keep in mind that the "d" option will decode the APK
+
+The resulting output will be a directory with the AndroidManifest.xml
+
+SOMETIMES THERE IS MORE THAN ONE ANDROIDMANIFEST.XML FILE SO DEBUGGING THE APK CAN MAKE IT EASIER TO READ THE FINAL ANDROIDMANIFEST.XML FILE
+
+

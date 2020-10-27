@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-16T11:39:34-04:00
+
+====== searchsploit ======
+Created Saturday 16 May 2020
+
+searchsploit vuln_name

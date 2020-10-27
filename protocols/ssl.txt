@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-17T05:07:04-04:00
+
+====== ssl ======
+Created Sunday 17 May 2020
+
+Secure Sockets Layer 
+
+Quick SSL Client:
+
+openssl s_client -connect <host>:<port>
+
+Quick SSL Server:
+
+openssl s_server -accept <port> 
+

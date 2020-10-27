@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-20T03:11:32-04:00
+
+====== telnet ======
+Created Wednesday 20 May 2020
+
+**port** 23
+
+**Description**
+Telnet is an application protocol used on the Internet or local area network to provide a bidirectional interactive text-oriented communication facility using a virtual terminal connection.
+
+
+**telnet -l {username} {ip} {port}**

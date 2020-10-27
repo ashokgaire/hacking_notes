@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-23T05:09:11-04:00
+
+====== tcpdump ======
+Created Saturday 23 May 2020
+
+**tcpdump -i eth1 -A -n host 192.168.0.6 and not arp**

@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-19T05:13:39-04:00
+
+====== generate ======
+Created Tuesday 19 May 2020
+
+to generate new password hash 
+
+mkpasswd -m sha-512 newpasswordhere
+
+and replace the output in [[/etc/password]]
+between :    :

@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-08T03:28:14-04:00
+
+====== netdiscover ======
+Created Friday 08 May 2020
+
+**netdiscover  -r 192.168.1.0/24**
+netdiscover -i wlan0/eth0
+
+ 

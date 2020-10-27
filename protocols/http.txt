@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-17T14:21:00-04:00
+
+====== http ======
+Created Sunday 17 May 2020
+
+hyper text transfer protocol(80)
+
+
+
+https===secure version of http (443)

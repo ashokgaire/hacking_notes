@@ -1,0 +1,34 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-08T05:16:11-04:00
+
+====== smb ======
+Created Friday 08 May 2020
+
+Server Message Block(138 & 445)
+used by windows based computer
+
+
+file directory scanning and action
+
+
+**smbclient  -L  \\10.10.10.193 -U tlavel**
+
+
+smbclient -L ftp -I ftp.microsoft.com
+
+-w workgroup
+-I ip
+-P connects t printer service
+-U username
+-p port number
+
+
+
+====== smbget ======
+
+**smbget -R  smb://10.10.10.193/print$ -U tlavel**
+
+
+====== smbpasswd ======
+smbpasswd -r 10.10.10.193 -U tlavel

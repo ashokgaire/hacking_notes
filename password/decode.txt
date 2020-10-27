@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-09T08:57:13-04:00
+
+====== decode ======
+Created Saturday 09 May 2020
+
+echo   {"code"}  | base64  --decode

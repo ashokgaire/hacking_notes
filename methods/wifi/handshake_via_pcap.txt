@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-17T14:30:40-04:00
+
+====== handshake via pcap ======
+Created Sunday 17 May 2020
+
+Open the pcap or cap in wireshark and type the following capture filter
+
+eapol || wlan.fc.type_subtype == 0x04 || wlan.fc.type_subtype == 0x08
+
+This will give you authentication beacons etc
+
++++++++++++++++++++++++++++=
+
+Crack a valid handshake inside of a pcap file
+
+aircrack-ng <pcap-name.cap> -w <wordlist-name.txt>

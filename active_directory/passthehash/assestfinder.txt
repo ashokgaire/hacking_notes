@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-12T04:07:31-04:00
+
+====== assestfinder ======
+Created Tuesday 12 May 2020
+
+lists all the subdomain 
+
+
+visit github
+required go launguage installation
+
+installation::go get -u github.com/tomnomnom/assetfinder
+
+assetfinder [--subs-only]  <domain>

@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-07-24T22:42:21-04:00
+
+====== gcc ======
+Created Friday 24 July 2020
+
+====== generate assembly code from c ======
+
+ **gcc -S -o example1.s example1.c**
+
+
+
+====== for 32 bit ======
+**gcc -m32 -o example1.s example1.c**

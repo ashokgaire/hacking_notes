@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-09T04:48:32-04:00
+
+====== hashcat ======
+Created Saturday 09 May 2020
+
+**https://hashcat.net/wiki/doku.php?id=example_hashes**
+
+
+identify hash online tool 
+**https://www.tunnelsup.com/hash-analyzer/**
+
+**hashcat -m 5600   hash.txt  rockyou.txt --force -O** 
+
+netntlmv2 | 5600  (check which type hash) 
+
+hashcat --help is better
+
+
+ **hashcat -m 400 -a 0 -o wppass2.txt hash.txt /usr/share/wordlists/rockyou.txt --force**
+**    hashcat --example-hashes**

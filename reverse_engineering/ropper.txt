@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-08-09T14:15:43+05:45
+
+====== ropper ======
+Created रविवार 09 अगस्त 2020
+
+pip install ropper
+
+
+* **ropper**
+* file libc.v.soS
+* **search /1/  jmp eax    {depth = 1}**

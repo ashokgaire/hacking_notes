@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-21T09:36:10-04:00
+
+====== pyhton server ======
+Created Thursday 21 May 2020
+
+**python3 -m http.server 7331**
+
+will start an HTTP server and host any files or directories from the current working
+path

