@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-24T13:15:03-04:00
+
+====== sonic visualizer ======
+Created Sunday 24 May 2020
+
+**https://www.sonicvisualiser.org/download.html**

@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-24T13:13:40-04:00
+
+====== Stegoveritas ======
+Created Sunday 24 May 2020
+
+best tool found so far
+supports every images
+
+====== install ======
+**pip3 install stegoveritas**
+**stegoveritas_install_deps**
+
+**stegoveritas -meta {imagename}**
+**stegoveritas -steghide {imagename}**
+**stegoveritas extractLSB {imagename}**

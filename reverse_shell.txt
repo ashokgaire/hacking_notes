@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-15T07:09:47-04:00
+
+====== reverse shell ======
+Created Friday 15 May 2020
+
+link 
+http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet

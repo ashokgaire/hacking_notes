@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-24T12:47:34-04:00
+
+====== image ======
+Created Sunday 24 May 2020
+
+**https://futureboy.us/stegano/decinput.html**
+
+
+**convert -depth 8 -size 1571x74+0 gray:pretty_raw_cutted prett_raw_out.png**
+**convert out.png -scale 300x200 out2.png**

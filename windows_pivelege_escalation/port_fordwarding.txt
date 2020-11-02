@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-22T10:55:20-04:00
+
+====== port fordwarding ======
+Created Friday 22 May 2020
+
+====== first step ======
+
+**gedit /etc/ssh/sshd_config**
+	---find **PermitRootLogin** 
+	 ---uncomment it as replace **prohibit-password** to **yes**
+its allow us to login in as root
+**service ssh restart**
+
+====== from windows ======
+you need to install plink.exe (putty)
+**plink.exe -l {username of kali } -pw {pass of kali} -R 455:127.0.0.1:445 {ip of kali}**

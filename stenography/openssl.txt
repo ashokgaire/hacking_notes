@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-27T09:23:45-04:00
+
+====== openssl ======
+Created Wednesday 27 May 2020
+
+**openssl enc -in c.07.txt -out binarytext -d -a && openssl rsautl -decrypt -in binarytext -out flag07.txt -inkey c.07.key && cat flag07.txt**

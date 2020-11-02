@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-22T05:51:46-04:00
+
+====== netwok enmu ======
+Created Friday 22 May 2020
+
+* **ipconfig**
+* **ipconfig /all**
+* **arp -a**
+* **route print**
+* **netstat -ano** 

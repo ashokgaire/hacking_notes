@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-24T12:47:28-04:00
+
+====== bstenography ======
+Created Sunday 24 May 2020
+
+**https://github.com/DominicBreuker/stego-toolkit**
+
+
+ 	Description 	How to use
+file 	Check out what kind of file you have 	**file stego.jpg**
+exiftool 	Check out metadata of media files 	**exiftool stego.jpg**
+binwalk 	Check out if other files are embedded/appended 	**binwalk stego.jpg**
+strings 	Check out if there are interesting readable characters in the file 	**strings stego.jpg**
+**foremost** 	Carve out embedded/appended files 	**foremost stego.jpg**
+pngcheck 	Get details on a PNG file (or find out is is actually something else) 	**pngcheck stego.png**
+identify 	GraphicMagick tool to check what kind of image a file is. Checks also if image is corrupted. 	**identify -verbose stego.jp**g
+ffmpeg 	ffmpeg can be used to check integrity of audio files and let it report infos and errors 	**ffmpeg -v info -i stego.mp3 -f null** - to recode the file and throw away the result

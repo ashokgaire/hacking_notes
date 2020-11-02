@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-11-02T13:36:29+05:45
+
+====== hashes ======
+Created Monday 02 November 2020
+
+
+====== base64 ======
+openssl base64 -in <infile> -out <outfile>
+
+====== md5 ======
+
+example: c81e728d9d4c2f636f067f89cc14862c

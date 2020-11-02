@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-24T12:53:16-04:00
+
+====== zst	zsteg ======
+Created Sunday 24 May 2020
+
+for png
+
+**zsteg png1.png 1b,lsb**
+

@@ -1,0 +1,36 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-10-27T16:00:04+05:45
+
+====== acess point with internet ======
+Created Tuesday 27 October 2020
+
+**apt install bridge-utils**
+
+
+**brctl addbr br0**
+**brctl addif br0 eth0**
+**ifconfig br0 up**
+
+
+====== **hostap.conf ** ======
+
+**#SET the wireless interface**
+**interface=wlan0**
+**bridge=br0**
+
+
+**#SET the wireless interface**
+**ssid=Test-Wifi**
+
+**#Set channel**
+**channel=1**
+
+**#Set driver**
+**driver=nl80211**
+
+
+
+
+**dnsmasq -C dnsmasq.conf**
+**hostapd hostapd.conf**

@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-22T11:59:00-04:00
+
+====== getsystem ======
+Created Friday 22 May 2020
+
+**getsystem** 
+very dangerous dnt try on real system

@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-22T06:17:16-04:00
+
+====== upload ======
+Created Friday 22 May 2020
+
+====== from metasploit reverse shell ======
+
+**cd c:\\windows\\temp**
+**upload /root/Downloads/winPEAS.exe**

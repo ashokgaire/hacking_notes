@@ -7,6 +7,11 @@ Created Tuesday 27 October 2020
 
 cretate your own access point page
 
+====== method1 ======
+airbase-ng -e "Fake wifi" -c  3  wlan0
+
+
+
 
 ====== install hostap ======
 **sudo apt install dnsmasq hostapd**
@@ -29,6 +34,8 @@ cretate your own access point page
 **#SET the dns server address**
 **dhcp-option=6,192.168.1.1**
 
+**#Redirect all requests to 192.168.1.1**
+**address=/#/192.168.1.1**
 
 ====== **hostap.conf ** ======
 
@@ -44,3 +51,16 @@ cretate your own access point page
 
 **#Set driver**
 **driver=nl80211**
+
+
+
+**dnsmasq -C dnsmasq.conf**
+**hostapd hostapd.conf**
+**ifconfig wlan0 192.168.1.1/24**
+
+**copy the portal template in   [[var/htm/www]] dir**
+
+
+
+
+

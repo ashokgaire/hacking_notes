@@ -1,0 +1,38 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-21T14:15:36-04:00
+
+====== windows pivelege escalation ======
+Created Thursday 21 May 2020
+
+* **net user                          options={username}**
+* **systeminfo | findst /B /C:"OS Name" /C:"OS Version" /C:"SYSTEM  Type**
+
+
+====== Enumerating Running Processes and Services ======
+**tasklist /SVC**
+
+====== networking routing tables ======
+**route print**
+
+====== active network connection ======
+**netstat -ano**
+
+====== Enumerating Firewall Status and Rules ======
+**netsh advfirewall show currentprofile**
+
+**netsh advfirewall firewall show rule name=all**
+
+====== Enumerating Scheduled Tasks ======
+**schtasks /query /fo LIST /v**
+
+====== Enumerating Installed Applications and Patch Levels ======
+**wmic product get name, version, vendor**
+
+====== Enumerating Unmounted Disks ======
+**mountvol**
+
+====== Enumerating Device Drivers and Kernel Modules ======
+ **powsershell**
+**driverquery.exe /v /fo csv | ConvertFrom-CSV | Select-Object ‘Dis**
+**play Name’, ‘Start Mode’, Path**

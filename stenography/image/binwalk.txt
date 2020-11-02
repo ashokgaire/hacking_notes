@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-16T05:12:48-04:00
+
+====== binwalk ======
+Created Saturday 16 May 2020
+
+
+
+extract the hidden files from image
+**binwalk -e filename.png**
+
+**binwalk --dd '.*' flag2.jpeg**

@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-27T06:59:44-04:00
+
+====== hexdump ======
+Created Wednesday 27 May 2020
+
+**hexdump -C flag1.jpeg | grep S**
